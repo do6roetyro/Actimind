@@ -5,7 +5,6 @@ var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 
 function getPosts() {
-    // fetch('https://jsonplaceholder.typicode.com/todos/1')
     fetch('https://jsonplaceholder.typicode.com/posts')
     .then(response => response.json())
     .then((json) => {
