@@ -5,10 +5,16 @@ var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 
 function getPosts() {
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    fetch('https://microsoftedge.github.io/Demos/json-dummy-data/64KB.json')
     .then(response => response.json())
     .then((json) => {
-        // {userId: 1, id: 1, title: "sunt aut facere repellat", body: "quia eto"} X 100
+        // {
+        //     "name": "Adeel Solangi",
+        //     "language": "Sindhi",
+        //     "id": "V59OF92YF627HFY0",
+        //     "bio": "Donec lobortis eleifend condimentum. Cras dictum dolor lacinia lectus vehicula rutrum. Maecenas quis nisi nunc. Nam tristique feugiat est vitae mollis. Maecenas quis nisi nunc.",
+        //     "version": 6.1
+        //   },
         console.log(json)
     })
 }
