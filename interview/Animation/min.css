@@ -1,0 +1,13 @@
+#pot {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#pot img {
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+}
+
+#pot:hover img {
+    transform: translateX(25px);
+}
